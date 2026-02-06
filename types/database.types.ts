@@ -17,6 +17,7 @@ export interface Listing {
   airbnb_id: string;
   title: string;
   description: string | null;
+  photo_url: string | null;
   created_at: string;
 }
 
@@ -29,6 +30,7 @@ export interface CreateListingInput {
   airbnb_id: string;
   title: string;
   description?: string;
+  photo_url?: string;
 }
 
 // =============================================
