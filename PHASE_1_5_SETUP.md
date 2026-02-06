@@ -57,7 +57,7 @@ GEMINI_MODEL=gemini-pro
 
 Inbound Parse allows users to forward guest emails to a unique address:
 ```
-inbound+{workspace_id}@hostops.ai
+inbound+{workspace_id}@ariahost.ai
 ```
 
 The email is POSTed to your webhook endpoint, which creates a thread and message.
@@ -111,7 +111,7 @@ ngrok http 3000
 
 Send a test email to:
 ```
-inbound+{workspace_id}@hostops.ai
+inbound+{workspace_id}@ariahost.ai
 ```
 
 Check your Supabase `threads` and `messages` tables.
@@ -188,7 +188,7 @@ Update your main dashboard navigation to include links to:
 ### 5.3. Email Forwarding
 
 1. Go to `/inbox`
-2. Copy the inbound email address: `inbound+{workspace_id}@hostops.ai`
+2. Copy the inbound email address: `inbound+{workspace_id}@ariahost.ai`
 3. Forward guest emails to this address
 4. Thread is created automatically
 5. View in `/inbox`

@@ -5,10 +5,10 @@ import { createClient } from '@/lib/supabase/server';
  * Inbound Email Webhook Handler
  *
  * Receives POSTed email payloads from SendGrid Inbound Parse (or similar service)
- * Email format: inbound+{workspace_id}@hostops.ai
+ * Email format: inbound+{workspace_id}@ariahost.ai
  *
  * Expected payload (SendGrid Inbound Parse format):
- * - to: recipient email (e.g., inbound+uuid@hostops.ai)
+ * - to: recipient email (e.g., inbound+uuid@ariahost.ai)
  * - from: sender email
  * - subject: email subject
  * - text: plain text body
@@ -49,11 +49,11 @@ export async function POST(request: NextRequest) {
     }
 
     // Extract workspace_id from email address
-    // Format: inbound+{workspace_id}@hostops.ai
+    // Format: inbound+{workspace_id}@ariahost.ai
     const workspaceId = extractWorkspaceId(payload.to);
     if (!workspaceId) {
       return NextResponse.json(
-        { error: 'Invalid recipient email format. Expected: inbound+{workspace_id}@hostops.ai' },
+        { error: 'Invalid recipient email format. Expected: inbound+{workspace_id}@ariahost.ai' },
         { status: 400 }
       );
     }
@@ -172,7 +172,7 @@ export async function POST(request: NextRequest) {
 
 /**
  * Extract workspace_id from recipient email
- * Format: inbound+{workspace_id}@hostops.ai
+ * Format: inbound+{workspace_id}@ariahost.ai
  */
 function extractWorkspaceId(email: string): string | null {
   const match = email.match(/inbound\+([a-f0-9-]+)@/i);

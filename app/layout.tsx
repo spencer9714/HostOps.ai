@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'HostOps.ai',
+  title: 'AriaHost',
   description: 'Property management platform',
 };
 

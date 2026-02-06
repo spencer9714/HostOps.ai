@@ -1,4 +1,4 @@
-# HostOps.ai MVP
+# AriaHost MVP
 
 A minimal viable product for a property management platform that proves the end-to-end flow: authentication → workspace creation → listing import.
 
@@ -23,7 +23,7 @@ A minimal viable product for a property management platform that proves the end-
 ## Project Structure
 
 ```
-HostOps.ai/
+AriaHost/
 ├── app/
 │   ├── dashboard/
 │   │   └── page.tsx          # Workspace management & listings view
@@ -57,7 +57,7 @@ HostOps.ai/
 
 ```bash
 git clone <repository-url>
-cd HostOps.ai
+cd AriaHost
 ```
 
 ### 2. Install dependencies

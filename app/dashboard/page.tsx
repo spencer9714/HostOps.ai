@@ -382,7 +382,7 @@ export default function DashboardPage() {
 
   const getInboundEmail = () => {
     if (!selectedWorkspace) return '';
-    return `inbound+${selectedWorkspace.id}@hostops.ai`;
+    return `inbound+${selectedWorkspace.id}@ariahost.ai`;
   };
 
   if (loading) {
@@ -398,7 +398,7 @@ export default function DashboardPage() {
       <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex justify-between items-center h-20">
-            <h1 className="text-2xl font-semibold text-gray-900">HostOps.ai</h1>
+            <h1 className="text-2xl font-semibold text-gray-900">AriaHost</h1>
             <button onClick={handleSignOut} className="text-sm font-medium text-gray-700 hover:text-gray-900">
               Sign out
             </button>

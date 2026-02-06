@@ -57,7 +57,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow">
         <div>
-          <h2 className="text-3xl font-bold text-center">HostOps.ai</h2>
+          <h2 className="text-3xl font-bold text-center">AriaHost</h2>
           <p className="mt-2 text-center text-gray-600">
             {isSignUp ? 'Create your account' : 'Sign in to your account'}
           </p>
